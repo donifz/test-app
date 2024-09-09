@@ -1,0 +1,245 @@
+{
+	"questions": [
+	  {
+		"id": 1,
+		"category": "Road Signs",
+		"question": "What does a red triangle sign indicate?",
+		"options": [
+		  "Warning",
+		  "Stop",
+		  "Yield",
+		  "No Entry"
+		],
+		"correct_option": "Warning"
+	  },
+	  {
+		"id": 2,
+		"category": "Speed Limits",
+		"question": "What is the national speed limit on a single carriageway road for cars?",
+		"options": [
+		  "50 mph",
+		  "60 mph",
+		  "70 mph",
+		  "80 mph"
+		],
+		"correct_option": "60 mph"
+	  },
+	  {
+		"id": 3,
+		"category": "Road Markings",
+		"question": "What do double yellow lines on the road mean?",
+		"options": [
+		  "No stopping",
+		  "No parking at any time",
+		  "Parking allowed",
+		  "Parking for disabled only"
+		],
+		"correct_option": "No parking at any time"
+	  },
+	  {
+		"id": 4,
+		"category": "Traffic Lights",
+		"question": "What should you do if the traffic light turns amber?",
+		"options": [
+		  "Speed up to pass the junction",
+		  "Stop if it is safe to do so",
+		  "Proceed without stopping",
+		  "Honk the horn"
+		],
+		"correct_option": "Stop if it is safe to do so"
+	  },
+	  {
+		"id": 5,
+		"category": "Highway Code",
+		"question": "What is the purpose of the two-second rule?",
+		"options": [
+		  "To maintain a safe distance from the vehicle in front",
+		  "To overtake safely",
+		  "To stop at red lights",
+		  "To avoid distractions"
+		],
+		"correct_option": "To maintain a safe distance from the vehicle in front"
+	  },
+	  {
+		"id": 6,
+		"category": "Pedestrian Crossings",
+		"question": "At a zebra crossing, you must:",
+		"options": [
+		  "Stop and give way to pedestrians",
+		  "Honk your horn to alert pedestrians",
+		  "Drive slowly through the crossing",
+		  "Ignore pedestrians and keep driving"
+		],
+		"correct_option": "Stop and give way to pedestrians"
+	  },
+	  {
+		"id": 7,
+		"category": "Overtaking",
+		"question": "When is it safe to overtake another vehicle?",
+		"options": [
+		  "On a bend",
+		  "In the middle of an intersection",
+		  "On a straight road with clear visibility",
+		  "When approaching a pedestrian crossing"
+		],
+		"correct_option": "On a straight road with clear visibility"
+	  },
+	  {
+		"id": 8,
+		"category": "Parking",
+		"question": "Where should you avoid parking your vehicle?",
+		"options": [
+		  "In a residential area",
+		  "On a bend or near a junction",
+		  "In a parking garage",
+		  "In a marked parking bay"
+		],
+		"correct_option": "On a bend or near a junction"
+	  },
+	  {
+		"id": 9,
+		"category": "Roundabouts",
+		"question": "When approaching a roundabout, you should:",
+		"options": [
+		  "Give way to traffic from your right",
+		  "Speed up to merge into the traffic",
+		  "Stop in the middle of the roundabout",
+		  "Ignore the traffic on the roundabout"
+		],
+		"correct_option": "Give way to traffic from your right"
+	  },
+	  {
+		"id": 10,
+		"category": "Braking",
+		"question": "In wet weather, your stopping distance could be:",
+		"options": [
+		  "Doubled",
+		  "Halved",
+		  "Unchanged",
+		  "Tripled"
+		],
+		"correct_option": "Doubled"
+	  },
+	  {
+		"id": 11,
+		"category": "Emergencies",
+		"question": "What should you do if your vehicle breaks down on a motorway?",
+		"options": [
+		  "Park on the hard shoulder and wait inside the car",
+		  "Use the emergency phone to call for help",
+		  "Continue driving slowly",
+		  "Leave your vehicle and walk along the motorway"
+		],
+		"correct_option": "Use the emergency phone to call for help"
+	  },
+	  {
+		"id": 12,
+		"category": "Vehicle Maintenance",
+		"question": "How often should you check your tire pressure?",
+		"options": [
+		  "Every day",
+		  "Every month or before long trips",
+		  "Once a year",
+		  "Only when the car is serviced"
+		],
+		"correct_option": "Every month or before long trips"
+	  },
+	  {
+		"id": 13,
+		"category": "Alcohol and Drugs",
+		"question": "What is the maximum legal blood alcohol concentration (BAC) for drivers in most countries?",
+		"options": [
+		  "0.02%",
+		  "0.05%",
+		  "0.08%",
+		  "0.10%"
+		],
+		"correct_option": "0.08%"
+	  },
+	  {
+		"id": 14,
+		"category": "Visibility",
+		"question": "When driving in fog, you should:",
+		"options": [
+		  "Use high beam headlights",
+		  "Use low beam headlights",
+		  "Turn off your headlights",
+		  "Increase your speed"
+		],
+		"correct_option": "Use low beam headlights"
+	  },
+	  {
+		"id": 15,
+		"category": "Motorway",
+		"question": "What is the minimum speed limit on a UK motorway?",
+		"options": [
+		  "30 mph",
+		  "40 mph",
+		  "50 mph",
+		  "There is no minimum speed limit"
+		],
+		"correct_option": "There is no minimum speed limit"
+	  },
+	  {
+		"id": 16,
+		"category": "Pedestrians",
+		"question": "When must you yield to pedestrians?",
+		"options": [
+		  "At all times",
+		  "When they are on the road",
+		  "Only at pedestrian crossings",
+		  "Only in residential areas"
+		],
+		"correct_option": "At all times"
+	  },
+	  {
+		"id": 17,
+		"category": "Lane Discipline",
+		"question": "When driving on a motorway, which lane should you use for overtaking?",
+		"options": [
+		  "Left lane",
+		  "Middle lane",
+		  "Right lane",
+		  "Any lane"
+		],
+		"correct_option": "Right lane"
+	  },
+	  {
+		"id": 18,
+		"category": "Parking",
+		"question": "What should you do if you park your car facing uphill?",
+		"options": [
+		  "Leave it in neutral gear",
+		  "Apply the handbrake and leave it in first gear",
+		  "Leave it in reverse gear",
+		  "Apply the handbrake and leave it in neutral"
+		],
+		"correct_option": "Apply the handbrake and leave it in first gear"
+	  },
+	  {
+		"id": 19,
+		"category": "Road Signs",
+		"question": "What does a blue circular sign with a white arrow mean?",
+		"options": [
+		  "No entry",
+		  "One-way traffic",
+		  "Mandatory turn",
+		  "End of restriction"
+		],
+		"correct_option": "Mandatory turn"
+	  },
+	  {
+		"id": 20,
+		"category": "Seatbelts",
+		"question": "When are you legally required to wear a seatbelt?",
+		"options": [
+		  "Only on motorways",
+		  "Only in the front seat",
+		  "At all times, unless exempt",
+		  "Only when driving above 30 mph"
+		],
+		"correct_option": "At all times, unless exempt"
+	  }
+	]
+  }
+  
