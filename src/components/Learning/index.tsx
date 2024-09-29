@@ -1,6 +1,5 @@
 import GraduationCapIcon from "../../assets/icons/graduation-cap.svg";
 import RightCircleIcon from "../../assets/icons/chevron-circle-right.svg";
-import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 

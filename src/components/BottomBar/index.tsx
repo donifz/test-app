@@ -4,7 +4,6 @@ import ProfileIcon from "../../assets/icons/profile.svg";
 import RouteIcon from "../../assets/icons/route.svg";
 import RankingIcon from "../../assets/icons/ranking.svg";
 import HomeIcon from "../../assets/icons/home.svg";
-import Link from "next/link";
 import MenuItem from "./MenuItem";
 
 const menu = [
