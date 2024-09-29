@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const BASE_URL_API = process.env.BASE_URL_API
+const BASE_URL_API = process.env.NEXT_PUBLIC_BASE_URL_API
 const ContentList = () => {
   const [contents, setContents] = useState([]);
   useEffect(()=>{

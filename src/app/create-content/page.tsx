@@ -6,7 +6,7 @@ import Select from "react-select";
 // import io from 'socket.io-client';
 
 // const socket = io('http://127.0.0.1:3000'); // URL вашего бэкенда
-const BASE_URL_API = process.env.BASE_URL_API
+const BASE_URL_API = process.env.NEXT_PUBLIC_BASE_URL_API
 const currentPrice = 200;
 const ContentForm = () => {
     // const router = useRouter();
