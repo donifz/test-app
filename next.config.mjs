@@ -8,6 +8,12 @@ const nextConfig = {
             port: '3000',
             pathname: '/uploads/**',
           },
+          {
+            protocol: 'https',
+            hostname: 'celebrated-charisma-production-7df4.up.railway.app',
+            port: '',
+            pathname: '/uploads/**',
+          },
         ],
       },
 	webpack(config) {
