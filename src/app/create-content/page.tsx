@@ -1,15 +1,13 @@
 "use client";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
-// import { useRouter } from 'next/navigation'
-// import io from 'socket.io-client';
 
-// const socket = io('http://127.0.0.1:3000'); // URL вашего бэкенда
 const BASE_URL_API = process.env.NEXT_PUBLIC_BASE_URL_API
 const currentPrice = 200;
 const ContentForm = () => {
-    // const router = useRouter();
+    const router = useRouter();
     const [formData, setFormData] = useState({
         desc: "",
         img: null,
@@ -24,18 +22,6 @@ const ContentForm = () => {
     const [errors, setErrors] = useState([]);
 
     const [price, setPrice] = useState(currentPrice);
-	// useEffect(() => {
-	// 	socket.on('newContent', (newContent) => {
-	// 		console.log(newContent);
-			
-	// 	//   setStories((prevStories) => [...prevStories, newContent]);
-	// 	});
-	
-	// 	return () => {
-	// 	  socket.off('newContent');
-	// 	};
-	//   }, []);
-	
 
     useEffect(() => {
         const fetchScreens = async () => {
@@ -117,7 +103,7 @@ const ContentForm = () => {
                 screen: [],
             });
             setErrors([]);
-            // router.push("/content/" + res.data.id);
+            router.push("/create-content/" + res.data.id);
             // Log the submitted form data for debugging purposes
             // In a real-world scenario, you would replace this with your own logging logic
             console.log("Form submitted:", formData);
