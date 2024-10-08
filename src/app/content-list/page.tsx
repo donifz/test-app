@@ -30,8 +30,10 @@ const ContentList = () => {
 }, []);
 
   const handleEdit = (id) => {
+    console.log(id);
+    
     // Handle Edit logic here
-    alert(`Editing promo with ID: ${id}`);
+    // alert(`Editing promo with ID: ${id}`);
   };
   const approveContent = async (id) => {
     console.log(id);
@@ -40,9 +42,9 @@ const ContentList = () => {
   };
 
   const handleDelete = (id) => {
-    if (window.confirm('Are you sure you want to delete this promo?')) {
+    // if (window.confirm('Are you sure you want to delete this promo?')) {
 		setContents(contents.filter((promo) => promo.id !== id));
-    }
+    // }
   };
 
   return (

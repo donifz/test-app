@@ -18,7 +18,6 @@ const StoriesSlider = ({ stories }) => {
           }
         });
       }, 600); // 150ms * 100 = 15 seconds
-      console.log(activeIndex,"activeIndex++++++++++++++++");
       
       return () => clearInterval(timer);
     }
