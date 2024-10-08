@@ -4,11 +4,13 @@ import { MapContainer, TileLayer, Marker, useMapEvents, Popup } from 'react-leaf
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
+import { useRouter } from 'next/navigation';
 
 
 const BASE_URL_API = process.env.NEXT_PUBLIC_BASE_URL_API;
 
 const BannerMap = () => {
+  const router = useRouter()
   const [coords, setCoords] = useState([]);
   const [markerIcon, setMarkerIcon] = useState(null);
 
@@ -36,8 +38,8 @@ const BannerMap = () => {
     fetchData();
   }, []);
 
-  const handlePublish = (location) => {
-    console.log(`Do you want to publish this banner at ${location}?`);
+  const handlePublish = (id) => {
+    router.push('/screen-content/'+id)
   };
 
   return (
@@ -53,8 +55,8 @@ const BannerMap = () => {
               <Popup>
                 <div>
                   <p>Do you want to publish this banner?</p>
-                  <p>on street {marker.address} banner</p>
-                  <button onClick={() => handlePublish(marker.address)}>Publish</button>
+                  <p>{marker.address}</p>
+                  <button onClick={() => handlePublish(marker.id)}>Publish to this banner</button>
                 </div>
               </Popup>
             </Marker>
