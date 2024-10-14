@@ -1,58 +1,34 @@
-"use client";
-// import { useRouter } from 'next/navigation'
-import io from "socket.io-client";
-const BASE_URL_API = process.env.NEXT_PUBLIC_BASE_URL_API
-
-const socket = io(BASE_URL_API); // URL вашего бэкенда
-
-
-import StoriesSlider from "@/components/Stories/StoriesSlider";
-import React, { useEffect, useState } from "react";
+"use client"
+import ScreenStories from "@/components/ScreenStory";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 
-const Stories = () => {
-    const [stories, setStories] = useState([]);
+const BASE_URL_API = process.env.NEXT_PUBLIC_BASE_URL_API;
+
+const StoriesPage = () => {
+    const [screen, setScreens] = useState([]);
     useEffect(() => {
         const fetchScreens = async () => {
-            const res = await axios.get(BASE_URL_API+"/content");
+            const res = await axios.get(BASE_URL_API + "/screen");
             if (res.status === 200) {
-                const mappedStories = res.data.map((item) => ({
-                    type: item.img.split(".").at(-1) === "mp4"?"video":"image",
-                    src: BASE_URL_API+"/uploads" + item.img,
-                }));
-                console.log(mappedStories, "aass");
-
-                setStories([...mappedStories]);
+                setScreens(res.data);
             }
         };
         fetchScreens();
     }, []);
-    useEffect(() => {
-        socket.on("newContent", (newContent) => {
-            console.log(newContent);
-            const mappedStories = newContent.map((item) => ({
-                type: item.img.split(".").at(-1) === "mp4"?"video":"image",
-                src: BASE_URL_API+"/uploads" + item.img,
-            }));
-            setStories([ ...mappedStories]);
-            console.log(stories);
-        });
-
-        return () => {
-            socket.off("newContent");
-        };
-    }, []);
-    console.log(stories[0], "stories");
-
+    
     return (
-        <div className="flex items-center justify-center h-screen bg-gray-100">
-            {stories.length > 0 && (
-                <div>
-                    <StoriesSlider stories={stories} />
-                </div>
-            )}
+        <div className=" grid grid-cols-3 gap-2">
+            {screen.map((screen) => {
+                return (
+                    <div key={screen.id}>
+                        <h2 className="text-xl">{screen.address}</h2>
+                        <ScreenStories screenId={screen.id} />
+                    </div>
+                );
+            })}
         </div>
     );
 };
 
-export default Stories;
+export default StoriesPage;

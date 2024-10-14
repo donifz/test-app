@@ -17,7 +17,7 @@ const StoriesSlider = ({ stories }) => {
             return 0;
           }
         });
-      }, 600); // 150ms * 100 = 15 seconds
+      }, 60); // 150ms * 100 = 15 seconds
       
       return () => clearInterval(timer);
     }
@@ -41,7 +41,7 @@ const StoriesSlider = ({ stories }) => {
 // console.log(stories,"stories");
 
   return (
-    <div className="relative w-full max-w-sm mx-auto h-96 bg-black rounded-lg overflow-hidden">
+    <div className="relative w-full max-w-sm  h-96 bg-black rounded-lg overflow-hidden">
       {stories.map((story, index) => (
         <Story key={index} content={story} isActive={index === activeIndex} />
       ))}
